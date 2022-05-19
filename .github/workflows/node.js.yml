@@ -38,12 +38,12 @@ jobs:
     - name: build docker images
       run: docker build -t marklong-demo:latest . 
 
-     - name: add tag to aliyun
-      run: docker tag marklong-demo:latest ${{secrets.DOCKER_LEARNING_URL}}/iai/marklong-demo:latest
+    - name: add tag to aliyun
+      run: docker tag marklong-demo:latest ${{secrets.DOCKER_LEARNING_URL}}/marklong-learning/marklong-demo:latest
 
-    - name: Login aliyun
-      run: echo "${{ secrets.ACR_PASSWORD }}" | docker login ${{ secrets.DOCKER_LEARNING_URL }} -u ${{ secrets.ACR_USERNAME }} --password-stdin
+    - name: Login aliyun
+      run: echo "${{ secrets.ACR_PASSWORD }}" | docker login ${{ secrets.DOCKER_LEARNING_URL }} -u ${{ secrets.ACR_USERNAME }} --password-stdin
 
-    - name: Push image
-      run: docker push ${{secrets.DOCKER_LEARNING_URL}}/iai/react-demo:latest
+    - name: Push image
+      run: docker push ${{secrets.DOCKER_LEARNING_URL}}/marklong-learning/marklong-demo:latest
 
