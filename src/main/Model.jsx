@@ -69,7 +69,7 @@ export default class Three extends Component {
         this.camera.lookAt(0, 0, 0);
     }
     //场景、动画渲染
-    //render要调用animation函数体，得用箭头函数，避免this指向错误
+    //render要调用animation函数体，得用箭头函数，避免this指向错误。
     animation = () => {
         this.renderer.render(this.scene, this.camera);
 
