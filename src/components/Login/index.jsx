@@ -47,6 +47,7 @@ export default class Login extends Component {
             <div className="design">
                 <h1>登 录</h1>
                 <div className="item">
+                    
                     <img src={man} alt=""/>
                     <input ref={c => this.username = c} type="text" name="username"  placeholder="Username"/><br/>
                     {/* <input onChange={this.saveUsername} type="text" name="username"  placeholder="Username"/><br/> */}
