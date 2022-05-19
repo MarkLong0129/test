@@ -1,0 +1,49 @@
+.design {
+    width: 450px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 15%;
+    text-align: center;
+    background: #00000020;
+    padding: 20px 50px;
+}
+
+
+
+body {
+    background: url("../../pictures/baogang.png") no-repeat center center;
+    background-size:cover; 
+    background-attachment:fixed; 
+}
+
+
+.design .item {
+    margin-top: 40px;
+}
+
+.design .item input {
+    border: 0;
+    border-bottom: 2px solid #000;
+    padding: 7px;
+    color: #000;
+    background-color: #ffffff00;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.design .item input:focus {
+    width: 260px;
+    border-color: aqua;
+}
+
+.design button {
+    width: 180px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.design button:hover{
+    background:rgb(111, 128, 114);
+}
