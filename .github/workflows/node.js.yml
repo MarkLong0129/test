@@ -36,5 +36,5 @@ jobs:
     # - run: npm test
 
     - name: build docker images
-      run: docker build -t markLong-demo:latest . 
+      run: docker build -t marklong-demo:latest . 
 
